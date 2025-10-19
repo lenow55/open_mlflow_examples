@@ -1,0 +1,18 @@
+{
+  "include": ["./*.py"],
+
+  "exclude": ["**/node_modules", "**/__pycache__", "**/data*", "./typings"],
+
+  "reportMissingImports": "error",
+  "reportMissingTypeStubs": "information",
+  "stubPath": "./typings",
+
+  "pythonVersion": "3.11",
+  "pythonPlatform": "Linux",
+
+  "executionEnvironments": [
+    {
+      "root": "./"
+    }
+  ]
+}

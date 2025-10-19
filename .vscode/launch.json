@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "name": "file full",
+      "type": "debugpy",
+      "request": "launch",
+      "cwdFolder": "${workspaceFolder}",
+      "program": "${file}",
+      "justMyCode": false
+    },
+    {
+      "name": "Attach (remote debug)",
+      "type": "debugpy",
+      "request": "attach",
+      "port": 5678,
+      "host": "127.0.0.1",
+      "pathMappings": [
+        {
+          "localRoot": "${workspaceFolder}",
+          "remoteRoot": "."
+        }
+      ]
+    }
+  ]
+}
