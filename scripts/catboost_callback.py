@@ -13,8 +13,8 @@ data = np.hstack([raw_df.values[::2, :], raw_df.values[1::2, :2]])
 target = raw_df.values[1::2, 2]
 
 
-mlflow.set_tracking_uri("http://localhost:5801")
-mlflow.set_experiment("Catboost test regress")
+mlflow.set_tracking_uri("http://127.0.0.1:5801")
+_ = mlflow.set_experiment("Catboost test regress")
 
 # Загружаем данные
 X = data
