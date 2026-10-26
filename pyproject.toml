@@ -19,6 +19,7 @@ dependencies = [
   "shap (>=0.46.0,<0.47.0)",
   "pydantic (>=2.10.4,<3.0.0)",
   "catboost (>=1.2.8,<2.0.0)",
+  "plotly (>=7.1.0,<8.0.0)",
 ]
 
 [tool.poetry]
