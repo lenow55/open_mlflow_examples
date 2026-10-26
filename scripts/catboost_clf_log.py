@@ -3,8 +3,8 @@ from catboost import CatBoostClassifier
 from mlflow.models import infer_signature
 from sklearn import datasets
 
-mlflow.set_tracking_uri("http://localhost:5801")
-mlflow.set_experiment("Catboost test")
+mlflow.set_tracking_uri("http://127.0.0.1:5801")
+_ = mlflow.set_experiment("Catboost test")
 
 # prepare data
 X, y = datasets.load_wine(as_frame=False, return_X_y=True)

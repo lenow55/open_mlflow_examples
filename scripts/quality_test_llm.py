@@ -18,7 +18,7 @@ from pydantic import SecretStr
 # Calling the autolog API will enable trace logging by default.
 mlflow.set_tracking_uri(uri="http://127.0.0.1:5801")
 mlflow.openai.autolog()
-mlflow.set_experiment("OpenAIQA")
+_ = mlflow.set_experiment("OpenAIQA")
 
 loader = WebBaseLoader("https://mlflow.org/docs/latest/index.html")
 

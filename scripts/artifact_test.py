@@ -14,5 +14,5 @@ with mlflow.start_run():
     mlflow.log_metric("metric1", 0.85)
 
     # Логируем файл как артефакт
-    mlflow.log_artifact("./data/artifact.txt")
+    mlflow.log_artifact("../data/artifact.txt")
     print("Артефакт загружен!")

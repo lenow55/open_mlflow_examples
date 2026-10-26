@@ -2,7 +2,7 @@ import mlflow
 
 
 mlflow.set_tracking_uri("http://localhost:5801")
-mlflow.set_experiment("custom-trace")
+_ = mlflow.set_experiment("custom-trace")
 
 
 # Mark any function with the trace decorator to automatically capture input(s) and output(s)

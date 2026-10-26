@@ -1,10 +1,11 @@
+from typing import Any
+
 import numpy as np
 import pandas as pd
 from numpy.typing import NDArray
 from plotly import colors
 from plotly import graph_objects as go
 from scipy import stats
-from typing_extensions import Any
 
 
 def plot_qq(
